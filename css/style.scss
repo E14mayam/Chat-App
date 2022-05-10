@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Phonk";
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/Phonk.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CalSans";
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/CalSans-SemiBold.otf") format("opentype");
+}
+
+* {
+  font-family: "CalSans", sans-serif;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+$main-color: #444cf7;
+$primary-color: #7fb5ff;
+$secondary-color: #001d6e;
+$alternate-color: #e5e5f7;
+$secondary-font: "Phonk", sans-serif;
+$font-color: #f2f2f0;
+
+//<--Home-Page-->
+.index {
+  background-color: $font-color;
+}
+
+header {
+  align-items: center;
+  h1 {
+    font-family: $secondary-font;
+    color: $secondary-color;
+    svg {
+      width: 40px;
+    }
+  }
+
+  nav {
+    a {
+      font-size: 30px;
+      margin: 0 20px;
+      color: $secondary-color;
+      letter-spacing: 2px;
+      text-decoration: none;
+      transition: 2s;
+      padding: 10px;
+      border-radius: 30px;
+      &:hover {
+        box-shadow: inset 300px 0px $secondary-color;
+        color: $font-color;
+      }
+    }
+  }
+}
+
+.connect {
+  min-height: 90vh;
+  background-image: linear-gradient(to right, #444cf7, #e5e5f7 1px);
+  border-top: 1px solid #444cf7;
+  background-size: cover;
+  .connect-img {
+    img {
+      width: 200px;
+      transition: 0.8s;
+      padding: 0;
+      border-radius: 50%;
+      border: 1px solid #444cf7;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+  .connect-text {
+    h1 {
+      font-family: $secondary-font;
+      font-size: 2.5rem;
+    }
+    h4 {
+      letter-spacing: 1rem;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+.community {
+  min-height: 100vh;
+  .community-text {
+    h1 {
+      font-family: $secondary-font;
+      font-size: 2.5rem;
+    }
+  }
+  .user-review {
+    width: 250px;
+    height: 350px;
+    box-shadow: 3px 3px 7px $alternate-color;
+    border-radius: 20px;
+    h3{
+      font-family: $secondary-font;
+      font-size: 1.3rem;
+    }
+    img {
+      width: 150px;
+      box-shadow: 3px 3px 9px $main-color;
+      border-radius: 50%;
+    }
+  }
+}
+
+.copyright{
+    border-top: 1px solid $main-color;
+}
+
+.messages{
+    min-height: 90vh;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-image: linear-gradient(to right, #444cf7, #e5e5f7 1px);
+    .bot{
+        width: 250px;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-size: 30px;
+        color: $alternate-color;
+        text-decoration: none;
+        background-color: $primary-color;
+        img{
+            width: 40px;
+        }
+        .bot-h5{
+            padding-top: 10px;
+        }
+    }
+}
+
+@media(max-width: 930px){
+  header{
+    h1{
+      margin: 0 auto;
+    }
+    nav{
+      display: none;
+    }
+  }
+}

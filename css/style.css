@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Phonk";
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/Phonk.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CalSans";
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/CalSans-SemiBold.otf") format("opentype");
+}
+
+* {
+  font-family: "CalSans", sans-serif;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.index {
+  background-color: #f2f2f0;
+}
+
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  font-family: "Phonk", sans-serif;
+  color: #001d6e;
+}
+
+header h1 svg {
+  width: 40px;
+}
+
+header nav a {
+  font-size: 30px;
+  margin: 0 20px;
+  color: #001d6e;
+  letter-spacing: 2px;
+  text-decoration: none;
+  -webkit-transition: 2s;
+  transition: 2s;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+header nav a:hover {
+  -webkit-box-shadow: inset 300px 0px #001d6e;
+          box-shadow: inset 300px 0px #001d6e;
+  color: #f2f2f0;
+}
+
+.connect {
+  min-height: 90vh;
+  background-image: linear-gradient(to right, #444cf7, #e5e5f7 1px);
+  border-top: 1px solid #444cf7;
+  background-size: cover;
+}
+
+.connect .connect-img img {
+  width: 200px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid #444cf7;
+}
+
+.connect .connect-img img:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.connect .connect-text h1 {
+  font-family: "Phonk", sans-serif;
+  font-size: 2.5rem;
+}
+
+.connect .connect-text h4 {
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.connect .connect-text p {
+  font-size: 15px;
+}
+
+.community {
+  min-height: 100vh;
+}
+
+.community .community-text h1 {
+  font-family: "Phonk", sans-serif;
+  font-size: 2.5rem;
+}
+
+.community .user-review {
+  width: 250px;
+  height: 350px;
+  -webkit-box-shadow: 3px 3px 7px #e5e5f7;
+          box-shadow: 3px 3px 7px #e5e5f7;
+  border-radius: 20px;
+}
+
+.community .user-review h3 {
+  font-family: "Phonk", sans-serif;
+  font-size: 1.3rem;
+}
+
+.community .user-review img {
+  width: 150px;
+  -webkit-box-shadow: 3px 3px 9px #444cf7;
+          box-shadow: 3px 3px 9px #444cf7;
+  border-radius: 50%;
+}
+
+.copyright {
+  border-top: 1px solid #444cf7;
+}
+
+.messages {
+  min-height: 90vh;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-image: linear-gradient(to right, #444cf7, #e5e5f7 1px);
+}
+
+.messages .bot {
+  width: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 30px;
+  color: #e5e5f7;
+  text-decoration: none;
+  background-color: #7fb5ff;
+}
+
+.messages .bot img {
+  width: 40px;
+}
+
+.messages .bot .bot-h5 {
+  padding-top: 10px;
+}
+
+@media (max-width: 930px) {
+  header h1 {
+    margin: 0 auto;
+  }
+  header nav {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
